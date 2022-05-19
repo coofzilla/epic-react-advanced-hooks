@@ -35,7 +35,7 @@ function useAsync(initialState) {
     error: null,
     ...initialState,
   })
-
+  console.log(state)
   const {status, data, error} = state
 
   const run = React.useCallback(async promise => {
